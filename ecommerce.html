@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 0;
+        }
+        .product-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .product-image {
+            width: 50%;
+        }
+        .product-image img {
+            max-width: 100%;
+        }
+        .product-details {
+            width: 50%;
+        }
+        .product-name {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: black;
+        }
+        .product-description {
+            font-size: 16px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        .product-price {
+            font-size: 20px;
+            color: #f00;
+            margin-top: 10px;
+        }
+        .add-to-cart {
+            margin-top: 20px;
+        }
+        .add-to-cart button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .cart-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:whitesmoke;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .cart-container .view-cart {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-image">
+            <img src="summer-nymph.png" alt="Product Name">
+        </div>
+        <div class="product-details">
+            <h1 class="product-name">SUMMER COLLECTION</h1>
+            <p class="product-description">A Specialised label creating luxury essentials.Ethically crafted with an unwavering commitment to expectional quality</p>
+            <p class="product-price">$499 onwards</p>
+            <div class="add-to-cart">
+                <button onclick="shop now('Product Name', 99.99)">Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <div class="cart-summary">
+            <span>Items in Cart: <span id="cart-count">0</span></span>
+            <span>Total: $<span id="cart-total">0.00</span></span>
+        </div>
+        <div class="view-cart">
+            <button onclick="viewCart()">View Cart</button>
+        </div>
+    </div>
+
+    <script>
+        let cart = [];
+        let cartCount = 0;
+        let cartTotal = 0;
+
+        function addToCart(productName, productPrice) {
+            cart.push({ name: productName, price: productPrice });
+            cartCount++;
+            cartTotal += productPrice;
+
+            // Update cart count and total
+            document.getElementById('cart-count').textContent = cartCount;
+            document.getElementById('cart-total').textContent = cartTotal.toFixed(2);
+        }
+
+        function viewCart() {
+            if (cart.length === 0) {
+                alert('Your cart is empty.');
+            } else {
+                let cartItems = cart.map(item => `${item.name} - $${item.price.toFixed(2)}`);
+                alert(`Cart Contents:\n${cartItems.join('\n')}\n\nTotal: $${cartTotal.toFixed(2)}`);
+            }
+        }
+    </script>
+</body>
+</html>
