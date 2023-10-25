@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Add a new task">
+            <button id="addTask">Add Task</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+#css
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff;
+}
+
+li.completed {
+    background-color: #e0f7e0;
+    text-decoration: line-through;
+}
+
+li span {
+    flex: 1;
+}
+
+button.edit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.delete {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#JS
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to retrieve tasks from local storage
+    function getTasksFromLocalStorage() {
+        const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+        return tasks;
+    }
+
+    // Function to update tasks in local storage
+    function updateTasksInLocalStorage(tasks) {
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+    }
+
+    // Function to display tasks
+    function displayTasks() {
+        const taskList = document.getElementById('taskList');
+        taskList.innerHTML = '';
+        const tasks = getTasksFromLocalStorage();
+
+        tasks.forEach((task, index) => {
+            const li = document.createElement('li');
+            li.textContent = task;
+            li.classList.add('task');
+            if (tasksCompleted[index]) {
+                li.classList.add('completed');
+            }
+            
+            const editButton = document.createElement('button');
+            editButton.textContent = 'Edit';
+            editButton.classList.add('edit');
+
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Delete';
+            deleteButton.classList.add('delete');
+
+            li.appendChild(editButton);
+            li.appendChild(deleteButton);
+
+            taskList.appendChild(li);
+
+            // Edit task
+            editButton.addEventListener('click', () => {
+                const updatedTask = prompt('Edit task:', task);
+                if (updatedTask !== null) {
+                    tasks[index] = updatedTask;
+                    updateTasksInLocalStorage(tasks);
+                    displayTasks();
+                }
+            });
+
+            // Delete task
+            deleteButton.addEventListener('click', () => {
+                tasks.splice(index, 1);
+                tasksCompleted.splice(index, 1);
+                updateTasksInLocalStorage(tasks);
+                displayTasks();
+            });
+
+            // Toggle completion status
+            li.addEventListener('click', () => {
+                tasksCompleted[index] = !tasksCompleted[index];
+                updateTasksInLocalStorage(tasks);
+                displayTasks();
+            });
+        });
+    }
+
+    const taskInput = document.getElementById('taskInput');
+    const addTaskButton = document.getElementById('addTask');
+
+    // Initialize the tasksCompleted array
+    let tasksCompleted = [];
+
+    // Add a new task
+    addTaskButton.addEventListener('click', () => {
+        const newTask = taskInput.value.trim();
+
+        if (newTask !== '') {
+            const tasks = getTasksFromLocalStorage();
+            tasks.push(newTask);
+            tasksCompleted.push(false);
+            updateTasksInLocalStorage(tasks);
+            displayTasks();
+            taskInput.value = '';
+        }
+    });
+
+    // Initial display of tasks
+    displayTasks();
+});
+
