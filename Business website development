@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Coffee Shop</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="style1.css">
+
+</head>
+
+<body>
+
+   <!-- header section starts  -->
+
+   <header class="header">
+
+      <section class="flex">
+
+         <a href="#home" class="logo"><img src="C:\Users\91831\Downloads\coffee logo.png" alt=""></a>
+
+         <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#contact">contact</a>
+         </nav>
+
+         <div id="menu-btn" class="fas fa-bars"></div>
+
+      </section>
+
+   </header>
+
+   <!-- header section ends -->
+
+   <!-- home section starts  -->
+
+   <div class="home-bg">
+
+      <section class="home" id="home">
+
+         <div class="content">
+            <h3>Welcome</h3>
+            <h4>to</h4>
+            <h3> Coffee Shop</h3>
+            <p>Visit us and try your towns best coffee</p>
+            <a href="#contact" class="btn">contact us</a>
+         </div>
+         <div class="content-img">
+            <img src="C:\Users\91831\Downloads\coffee cup.jfif" alt="">
+         </div>
+
+      </section>
+
+
+   </div>
+
+   <!-- home section ends -->
+
+   <!-- about section starts  -->
+
+   <section class="about" id="about">
+
+      <div class="image">
+         <img src="C:\Users\91831\Downloads\cfe.jfif" alt="">
+      </div>
+
+      <div class="content">
+         <h3>Life with Coffee</h3>
+         <p>We believe that a great cup of coffee is more than just a morning pick-me-up. It's a ritual, a moment of
+            indulgence, and a way to connect with others. That's why we source only the highest quality beans from
+            around the world and roast them to perfection in-house.</p>
+         <p>
+
+            Our shop is located in the heart of downtown, just a few minutes walk from the main square. We have a cozy
+            and warm atmosphere, perfect for a quick break or a long catch up with friends. We also have a small outdoor
+            seating area for those who want to enjoy their coffee in the sun..</p>
+         <a href="#menu" class="btn">our menu</a>
+      </div>
+
+   </section>
+
+   <!-- about section ends -->
+
+   <!-- facility section starts  -->
+
+   <section class="facility">
+
+      <div class="heading">
+         <img src="C:\Users\91831\Downloads\servicess.jpg" alt="">
+         <h3>our Services</h3>
+      </div>
+
+      <div class="swiper-container">
+         <div class="swiper-wrapper">
+            <div class="slider-item swiper-slide">
+               <div class="slider-image-wrapper">
+                  <img class="slider-image" src="C:\Users\91831\Downloads\varieties.avif" alt="SliderImg">
+               </div>
+               <div class="slider-item-content">
+                  <h1>Varieties of coffeesy</h1>
+                  <p>Coffee is a beloved beverage around the world, and there are many different varieties of coffee
+                     beans and brewing methods to choose from.</p>
+               </div>
+            </div>
+            <div class="slider-item swiper-slide">
+               <div class="slider-image-wrapper">
+                  <img class="slider-image" src="C:\Users\91831\Downloads\types_of_coffee_beans.jpg" alt="SliderImg">
+               </div>
+               <div class="slider-item-content">
+                  <h1>Coffee beans</h1>
+                  <p>Some popular brewing methods include Espresso, French Press, Drip Brew, and pour over.
+                     Additionally, there are many different types of coffee drinks such as Cappuccino, Latte, Macchiato,
+                     Mocha and Americano. Each of these drinks have unique flavor profiles and characteristics, and
+                     offer a wide range of options for coffee enthusiasts to enjoy. No matter what your taste
+                     preferences may be, there's a coffee out there that's sure to please.</p>
+               </div>
+            </div>
+            <div class="slider-item swiper-slide">
+               <div class="slider-image-wrapper">
+                  <img class="slider-image" src="C:\Users\91831\Downloads\breakfasts.jpg" alt="SliderImg">
+               </div>
+               <div class="slider-item-content">
+                  <h1>breakfast and sweets</h1>
+                  <p> The two main types of coffee beans are Arabica and Robusta, with Arabica being known for its mild
+                     flavor and subtle notes of fruit and chocolate, and Robusta being known for its strong and bitter
+                     flavor and high caffeine content. </p>
+               </div>
+            </div>
+            <div class="slider-buttons">
+               <button class="swiper-button-prev">Prev</button>
+               <button class="swiper-button-next">Next</button>
+            </div>
+            <div class="swiper-pagination"></div>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- facility section ends -->
+
+   <!-- menu section starts  -->
+
+   <section class="menu" id="menu">
+
+      <div class="heading">
+         <img src="C:\Users\91831\Downloads\menu.webp" alt="">
+         <h3>popular menu</h3>
+      </div>
+
+      <div class="box-container">
+
+         <div class="box">
+            <img src="C:\Users\91831\Downloads\cfe1.jpg" alt="">
+            <h3>love you coffee</h3>
+         </div>
+
+         <div class="box">
+            <img src="C:\Users\91831\Downloads\cfe2.webp" alt="">
+            <h3>Cappuccino</h3>
+         </div>
+
+         <div class="box">
+            <img src="C:\Users\91831\Downloads\cfe3.jpg" alt="">
+            <h3>Mocha coffee</h3>
+         </div>
+
+         <div class="box">
+            <img src="C:\Users\91831\Downloads\cfe4.webp" alt="">
+            <h3>Frappuccino</h3>
+         </div>
+
+         <div class="box">
+            <img src="C:\Users\91831\Downloads\cfe5.webp" alt="">
+            <h3>black coffee</h3>
+         </div>
+
+         <div class="box">
+            <img src="C:\Users\91831\Downloads\cfe6.jpg" alt="">
+            <h3>love heart coffee</h3>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- menu section ends -->
+   <!-- contact section starts  -->
+
+   <section class="contact" id="contact">
+
+      <div class="heading">
+         <img src="images/heading-img.png" alt="">
+         <h3>contact us</h3>
+      </div>
+
+      <div class="row">
+
+         <div class="image">
+            <img src="C:\Users\91831\Downloads\table.jpg" alt="">
+         </div>
+
+         <form action="" method="post">
+            <h3>book a table</h3>
+            <input type="text" name="name" required class="box" maxlength="20" placeholder="enter your name">
+            <input type="number" name="number" required class="box" maxlength="20" placeholder="enter your number"
+               min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false">
+            <input type="number" name="guests" required class="box" maxlength="20" placeholder="how many guests" min="0"
+               max="99" onkeypress="if(this.value.length == 2) return false">
+            <input type="submit" name="send" value="send message" class="btn">
+         </form>
+
+      </div>
+
+   </section>
+
+   <!-- contact section ends -->
+
+   <!-- footer section starts  -->
+
+   <section class="footer">
+
+      <div class="box-container">
+
+         <div class="box">
+            <i class="fas fa-envelope"></i>
+            <h3>our email</h3>
+            <p>ramya@gmail.com</p>
+         </div>
+
+         <div class="box">
+            <i class="fas fa-clock"></i>
+            <h3>opening hours</h3>
+            <p>07:00am to 09:00pm</p>
+         </div>
+
+         <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>shop location</h3>
+            <p>Gangavathi, India - 583272</p>
+         </div>
+
+         <div class="box">
+            <i class="fas fa-phone"></i>
+            <h3>our number</h3>
+            <p>+123-456-7890</p>
+            <p>+111-222-3333</p>
+         </div>
+
+      </div>
+
+      <div class="credit"> &copy; copyright @ 2023 by <span>Ramya Chilukuri</span> | all rights reserved! </div>
+
+   </section>
+
+   <!-- footer section ends -->
+
+   <!-- custom js file link  -->
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js'></script>
+   <script src="js/script.js"></script>
+
+</body>
+
+</html>
+#CSS
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+
+:root {
+   --main-color: #be9c79;
+   --black: #333;
+   --white: #fff;
+   --light-color: #666;
+   --border: .1rem solid var(--black);
+   --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+* {
+   font-family: 'Nunito', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+
+*::selection {
+   background-color: var(--main-color);
+   color: var(--white);
+}
+
+::-webkit-scrollbar {
+   height: .5rem;
+   width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+   background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: var(--main-color);
+}
+
+html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 6.5rem;
+}
+
+section {
+   padding: 3rem 2rem;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+body {
+   background: #cf9c6ab7;
+}
+
+.heading {
+   text-align: center;
+   margin-bottom: 3rem;
+}
+
+.heading img {
+   height: 4rem;
+   margin-bottom: 1rem;
+}
+
+.heading h3 {
+   font-size: 4rem;
+   color: var(--black);
+   font-family: 'Merienda One', cursive;
+}
+
+h4 {
+   font-size: 2.5rem;
+   color: var(--black);
+   font-family: 'Merienda One', cursive;
+}
+
+.btn {
+   display: inline-block;
+   margin-top: 1rem;
+   background-color: var(--main-color);
+   cursor: pointer;
+   color: var(--white);
+   font-size: 1.8rem;
+   padding: 1rem 3rem;
+}
+
+.btn:hover {
+   background-color: var(--black);
+}
+
+.header {
+   position: sticky;
+   top: 0;
+   left: 0;
+   right: 0;
+   background: rgba(255, 255, 255, 0.1);
+   box-shadow: var(--box-shadow);
+   z-index: 1000;
+}
+
+.header .flex {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+   padding: 1.5rem 2rem;
+}
+
+.header .flex .logo img {
+   height: 4.5rem;
+}
+
+.header .flex .navbar a {
+   margin-left: 2rem;
+   font-size: 2rem;
+   color: var(--light-color);
+}
+
+.header .flex .navbar a:hover {
+   text-decoration: underline;
+   color: var(--main-color);
+}
+
+#menu-btn {
+   display: none;
+   font-size: 2.5rem;
+   color: var(--black);
+   cursor: pointer;
+}
+
+.home-bg {
+   margin-top: -8rem;
+   background: linear-gradient(to left, var(--main-color) 10%, var(--white) 90%);
+   background-size: cover;
+   background-position: center;
+}
+
+.home-bg .home {
+   min-height: 70rem;
+   display: flex;
+   align-items: center;
+}
+
+.home-bg .home .content {
+   width: 50rem;
+   text-align: center;
+}
+
+.home-bg .home .content h3 {
+   font-size: 6rem;
+   color: var(--black);
+   font-family: 'Merienda One', cursive;
+}
+
+.home-bg .home .content p {
+   padding: 2rem 0;
+   font-size: 1.6rem;
+   color: var(--black);
+   line-height: 2;
+}
+
+.home-bg .home .content-img {
+   margin-top: -3rem;
+   padding-left: 10%;
+   background-size: cover;
+   background-position: center;
+   width: 30%;
+   height: 100vh;
+   ;
+}
+
+.about {
+
+   display: flex;
+   /* border:var(--border); */
+   border-radius: 10px;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 4rem;
+   margin-top: 6%;
+
+}
+
+.about:hover {
+   box-shadow: rgba(0, 0, 0, 0.337) 0px 8px 24px;
+}
+
+.about .image {
+   flex: 1 1 40rem;
+}
+
+.about .image img {
+   width: 100%;
+}
+
+.about .content {
+   flex: 1 1 40rem;
+}
+
+.about .content h3 {
+   font-size: 4.5rem;
+   color: var(--black);
+   font-family: 'Merienda One', cursive;
+   padding-bottom: 1rem;
+}
+
+.about .content p {
+   padding: 2rem 0;
+   line-height: 2;
+   color: var(--light-color);
+   font-size: 1.5rem;
+}
+
+.about .content a {
+   margin: 10%;
+}
+
+.facility {
+   display: grid;
+   place-items: center;
+}
+
+
+.menu {
+   margin: 10%;
+   border-radius: 10px;
+}
+
+.menu:hover {
+   box-shadow: rgba(0, 0, 0, 0.337) 0px 8px 24px;
+}
+
+.menu .box-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 30rem);
+   gap: 2rem;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.menu .box-container .box {
+   text-align: center;
+}
+
+.menu .box-container .box img {
+   width: 100%;
+   margin-bottom: 1rem;
+}
+
+.menu .box-container .box h3 {
+   font-size: 2rem;
+   color: var(--black);
+}
+
+.gallery .box-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 33rem);
+   gap: 1.5rem;
+   justify-content: center;
+}
+
+.gallery .box-container img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.team .box-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 33rem);
+   gap: 1.5rem;
+   justify-content: center;
+}
+
+.team .box-container .box {
+   text-align: center;
+}
+
+.team .box-container .box img {
+   width: 100%;
+   object-fit: cover;
+   margin-bottom: .5rem;
+}
+
+.team .box-container .box h3 {
+   font-size: 2rem;
+   color: var(--black);
+}
+
+.contact .row {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 2rem;
+}
+
+.contact .row .image {
+   flex: 1 1 50rem;
+}
+
+.contact .row .image img {
+   width: 100%;
+}
+
+.contact .row form {
+   flex: 1 1 30rem;
+   border: var(--border);
+   padding: 2rem;
+   text-align: center;
+}
+
+.contact .row form h3 {
+   font-size: 2.5rem;
+   margin-bottom: 1rem;
+   color: var(--black);
+}
+
+.contact .row form .box {
+   width: 100%;
+   padding: 1.4rem;
+   font-size: 1.8rem;
+   color: var(--black);
+   border: var(--border);
+   margin: 1rem 0;
+}
+
+.footer .box-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+   gap: 1.5rem;
+   align-items: flex-start;
+}
+
+.footer .box-container .box {
+   text-align: center;
+}
+
+.footer .box-container .box i {
+   font-size: 2.5rem;
+   line-height: 6rem;
+   height: 6rem;
+   width: 6rem;
+   border-radius: 50%;
+   background-color: var(--main-color);
+   color: var(--white);
+   margin-bottom: 1rem;
+}
+
+.footer .box-container .box h3 {
+   margin: 1rem 0;
+   font-size: 2rem;
+   color: var(--black);
+}
+
+.footer .box-container .box p {
+   line-height: 2;
+   font-size: 1.6rem;
+   color: var(--light-color);
+}
+
+.footer .credit {
+   text-align: center;
+   margin-top: 3rem;
+   padding-top: 2.5rem;
+   border-top: var(--border);
+   font-size: 2rem;
+   color: var(--black);
+   /* padding-bottom: 7rem; */
+}
+
+.footer .credit span {
+   color: var(--main-color);
+}
+
+
+
+h1 {
+   margin: 0;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 32px;
+   color: #26384E;
+   transform: translateY(20px);
+   transition: all 0.4s ease;
+   transition-delay: 0.2s;
+   overflow: hidden;
+   max-width: 100%;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+@media screen and (max-width: 520px) {
+   h1 {
+      font-size: 16px;
+      line-height: 24px;
+   }
+}
+
+p {
+   font-size: 16px;
+   line-height: 24px;
+   color: #000000;
+   transform: translateY(20px);
+   transition: all 0.4s ease;
+   transition-delay: 0.3s;
+   display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 520px) {
+   p {
+      font-size: 14px;
+      line-height: 20px;
+   }
+}
+
+.swiper-wrapper {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   z-index: 1;
+   position: relative;
+}
+
+.swiper-container {
+   background: linear-gradient(270deg, var(--main-color) 0%, var(--main-color) 100%);
+   box-shadow: rgba(149, 157, 165, 0.337) 0px 8px 24px;
+   width: 100%;
+   position: relative;
+   max-width: 420px;
+   height: 100%;
+   max-height: 420px;
+   border-radius: 10px;
+}
+
+.slider-image-wrapper {
+   height: 200px;
+   width: 100%;
+   overflow: hidden;
+}
+
+.slider-item {
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   flex-shrink: 0;
+   opacity: 0;
+   background: rgba(255, 255, 255, 0.1);
+   ;
+   cursor: -webkit-grab;
+   cursor: grab;
+}
+
+.slider-item-content {
+   padding: 32px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   transition: 0.4s;
+}
+
+.slider-item-content>* {
+   opacity: 0;
+   transform: translateY(20px);
+}
+
+.swiper-slide-active .slider-item-content>* {
+   transform: translateY(0px);
+   opacity: 1;
+}
+
+.slider-image {
+   width: 100%;
+   height: 100%;
+   -o-object-fit: cover;
+   object-fit: cover;
+   transition: 0.2s;
+}
+
+.swiper-pagination {
+   position: absolute;
+   left: 50%;
+   bottom: 8px;
+   transform: translatex(-50%);
+   z-index: 1;
+   width: auto !important;
+}
+
+.swiper-pagination-bullet {
+   border-radius: 0;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   line-height: 30px;
+   font-size: 12px;
+   opacity: 1;
+   background: rgba(0, 0, 0, 0.3);
+   display: inline-block;
+   margin-right: 8px;
+   cursor: pointer;
+   transition: all 0.2s;
+}
+
+.swiper-pagination-bullet-active {
+   background: #000000;
+   width: 20px;
+   border-radius: 10px;
+}
+
+.slider-buttons {
+   position: absolute;
+   display: flex;
+   top: 100%;
+   justify-content: flex-end;
+   width: 100%;
+   padding-top: 8px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   outline: none;
+   color: rgb(0, 0, 0);
+   position: relative;
+   margin-left: 4px;
+}
+
+.swiper-button-next:before,
+.swiper-button-prev:before {
+   content: "";
+   position: absolute;
+   background-color: #fff;
+   height: 1px;
+   width: 0;
+   left: 0;
+   bottom: -1px;
+   transition: 0.2s;
+}
+
+.swiper-button-next:hover:before,
+.swiper-button-prev:hover:before {
+   width: 100%;
+}
+
+.socials {
+   position: fixed;
+   top: 12px;
+   right: 16px;
+   display: flex;
+   align-items: center;
+}
+
+.socials .social-link {
+   display: inline-block;
+   margin-left: 8px;
+   color: #fff;
+}
+
+@media screen and (max-width: 520px) {
+
+   .swiper-button-next:hover:before,
+   .swiper-button-prev:hover:before {
+      display: none;
+   }
+
+   .swiper-container {
+      width: 250px;
+   }
+
+   .swiper-wrapper {
+      width: 250px;
+   }
+
+   .slider-item {
+      width: 250px;
+   }
+
+   .slider-image {
+      height: 250px;
+      width: 250px;
+   }
+
+}
+
+
+
+/* media queries  */
+
+@media (max-width:991px) {
+
+   html {
+      font-size: 55%;
+   }
+
+}
+
+@media (max-width:768px) {
+
+   #menu-btn {
+      display: inline-block;
+      transition: .2s linear;
+   }
+
+   #menu-btn.fa-times {
+      transform: rotate(180deg);
+   }
+
+   .header .flex .navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background-color: var(--white);
+      border-top: var(--border);
+      border-bottom: var(--border);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: .2s linear;
+   }
+
+   .header .flex .navbar.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   }
+
+   .header .flex .navbar a {
+      display: block;
+      margin: 2rem;
+   }
+
+   .home-bg {
+      background-position: left;
+   }
+
+   .home-bg .home {
+      justify-content: center;
+   }
+
+   .home-bg .home .content h3 {
+      font-size: 4rem;
+   }
+
+   .home-bg .home .content-img {
+      display: none;
+   }
+
+   .about {
+      margin: 4%;
+   }
+
+   .about .content h3 {
+      font-size: 3rem;
+   }
+
+}
+
+@media (max-width:450px) {
+
+   html {
+      font-size: 50%;
+   }
+
+   .heading img {
+      height: 3rem;
+   }
+
+   .heading h3 {
+      font-size: 3rem;
+   }
+
+   .home-bg .home .content-img {
+      display: none;
+   }
+
+   .about {
+      margin: 4%;
+   }
+
+}
+#JS
+let menu = document.querySelector('#menu-btn');
+let navbar = document.querySelector('.header .flex .navbar');
+
+menu.onclick = () => {
+   menu.classList.toggle('fa-times');
+   navbar.classList.toggle('active');
+}
+
+window.onscroll = () => {
+   menu.classList.remove('fa-times');
+   navbar.classList.remove('active');
+}
+var swiper = new Swiper('.swiper-container', {
+   slidesPerView: 1,
+   spaceBetween: 20,
+   effect: 'fade',
+   loop: true,
+   speed: 300,
+   mousewheel: {
+      invert: false,
+   },
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true
+   },
+   // Navigation arrows
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+   }
+});
